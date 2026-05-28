@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 – 화곡 셔츠룸 마포 서버 웜업</title>
+    <meta name="description" content="진짜 서버 웜업이란 무엇인가? 화곡 셔츠룸이 마포에서 전하는 단단한 웜업 철학. 거침없는 리뷰, 현실적인 조언. 24시간 상담 010-6279-0862.">
+    <meta name="keywords" content="화곡 셔츠룸 블로그, 마포 서버 웜업 후기, 셔츠룸 웜업 정보, 서버 예열 방법, 화곡동 셔츠룸 블로그, 웜업 에티켓, 하드코어 웜업 가이드">
+    <link rel="canonical" href="https://sf-t3-1779642675702-110.pages.dev/blog">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta property="og:title" content="블로그 – 왜 대부분의 웜업은 실패하는가">
+    <meta property="og:description" content="진짜 서버 웜업이란 무엇인가? 화곡 셔츠룸이 마포에서 전하는 단단한 웜업 철학. 거침없는 리뷰, 현실적인 조언.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sf-t3-1779642675702-110.pages.dev/blog">
+    <link rel="stylesheet" href="style.css?ver=1.0">
+    <style>
+        /* responsive-768 핵심 패턴 — 디자인 시스템 고정 */
+        @media (max-width: 768px) {
+            .grid-3 { grid-template-columns: 1fr; }
+            .flex-row { flex-direction: column; }
+            .hero-text { font-size: 2.2rem; }
+        }
+        /* brutalism 커스텀 변수 */
+        :root {
+            --bg: #1a1a1a;
+            --fg: #e0e0e0;
+            --acc: #ff3b3b;
+            --acc2: #00e5ff;
+            --font-mono: 'Courier New', Courier, monospace;
+            --border: 3px solid var(--acc);
+        }
+        body {
+            background: var(--bg);
+            color: var(--fg);
+            font-family: var(--font-mono);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.7;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1, h2, h3 { color: var(--acc); text-transform: uppercase; letter-spacing: 2px; }
+        a { color: var(--acc2); text-decoration: underline wavy var(--acc); }
+        a:hover { color: var(--acc); }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border: var(--border);
+            background: transparent;
+            color: var(--acc);
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn:hover { background: var(--acc); color: var(--bg); }
+        .card {
+            border: var(--border);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: #222;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .flex-row {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .hero-text {
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin: 2rem 0;
+        }
+        .sub { color: #aaa; font-size: 0.9rem; }
+        hr { border: 1px dashed var(--acc); margin: 2rem 0; }
+        nav a { margin-right: 1.5rem; font-size: 1.1rem; }
+        footer { border-top: 2px solid var(--acc); margin-top: 3rem; padding-top: 1.5rem; text-align: center; color: #777; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 네비게이션 (전체 페이지 공통) -->
+        <nav class="flex-row" style="justify-content: space-between; flex-wrap: wrap;">
+            <div>
+                <a href="/">홈</a>
+                <a href="/about">서비스</a>
+                <a href="/blog" style="color: var(--acc); font-weight: bold;">블로그</a>
+                <a href="/contact">상담</a>
+            </div>
+            <span class="sub">📞 010-6279-0862</span>
+        </nav>
+
+        <!-- 히어로 영역 / 블로그 제목 -->
+        <header style="margin: 3rem 0 2rem;">
+            <h1 class="hero-text" style="margin-bottom: 0.5rem;">🌸 맘카페가 알려주는<br>서버 웜업의 민낯</h1>
+            <p class="sub" style="font-size: 1.2rem; color: var(--acc2);">
+                “웜업? 그냥 예열 아니야?” —<br>
+                <span style="color: var(--acc);">틀렸다. 니가 생각하는 그 웜업은 이미 망했다.</span>
+            </p>
+            <p style="border-left: 5px solid var(--acc); padding-left: 1rem; margin: 2rem 0;">
+                <strong>화곡 셔츠룸 마포지점</strong>이 직접 까발리는 웜업의 진실.<br>
+                부드러운 말만 찾는 사람은 뒤로가기 눌러라.
+            </p>
+        </header>
+
+        <!-- 본문 – 정보성 글 1편 -->
+        <article>
+            <h2>🔥 "웜업 좀 한다"는 놈들의 공통점</h2>
+            <p>
+                마포, 화곡, 신촌, 홍대 — 여기저기서 서버 웜업을 팔아대지만 
+                진짜 피드백을 주는 곳은 손에 꼽는다. 나는 맘카페에서 
+                '착한 웜업' '소프트한 예열' 같은 애매한 단어를 볼 때마다 
+                헛웃음이 나온다. <strong>웜업은 소프트할 수 없다.</strong> 
+                서버가 차가울 때 넣는 건 열이지 바람이 아니다.
+            </p>
+            <p>
+                화곡 셔츠룸은 다르다. 우리는 <span style="color: var(--acc);">거친 피드백</span>을 
+                기본값으로 삼는다. "아파요"라는 말이 나오면 "좋다, 제대로 들어간다"고 
+                생각한다. 진정한 웜업은 불편함을 뚫고 나오는 반응이다. 
+                <em>편안함을 원하면 찜질방 가라.</em>
+            </p>
+
+            <hr>
+
+            <h2>📌 그래서, 진짜 웜업이 뭔데?</h2>
+            <p>
+                서버 웜업의 본질은 <u>시스템을 한계까지 밀어붙인 뒤</u> 
+                그 반응을 읽는 것이다. 온도, 속도, 피드백 루프 — 이 세 가지가 
+                ㅆㅅㅌㅊ로 맞아떨어져야 웜업이라고 부를 수 있다. 
+                핸드롭만 빠르다고 웜업이 아니다. <strong>너는 지금까지 
+                '그냥 릴렉스'를 웜업이라고 착각하고 있었다.</strong>
+            </p>
+            <ul style="border: 2px dashed var(--acc2); padding: 1.5rem; list-style: square; color: var(--acc);">
+                <li>❌ 예열 5분 하고 끝? → <span style="color: #aaa;">그건 준비운동이지 웜업이 아니다</span></li>
+                <li>❌ "살살 해주세요" → <span style="color: #aaa;">그럼 니가 왜 웜업을 불렀냐</span></li>
+                <li>✅ 땀·긴장·확실한 반응 → <span style="color: var(--acc2);">이게 웜업이다</span></li>
+            </ul>
+
+            <hr>
+
+            <h2>💥 화곡 셔츠룸만의 방식</h2>
+            <p>
+                우리는 소위 '예민한 서버'도 자신 있게 받는다. 
+                이유는 간단하다. <strong>진짜 피드백은 깨지면서 나오기 때문</strong>이다. 
+                마포에서 3년, 화곡에서 5년 — 우리는 수백 명의 서버를 
+                직접 웜업해왔다. 거짓말 같은 후기나 인플루언서 마케팅은 하지 않는다. 
+                입소문과 실력만으로 버티는 집이다.
+            </p>
+
+            <div class="card" style="background: #111; border-color: var(--acc2);">
+                <p style="font-size: 1.3rem; margin: 0;">
+                    <span style="color: var(--acc2);">✓</span> 
+                    "다른 곳은 10분 만에 끝내는데 여기는 30분 내내 
+                    <span style="color: var(--acc);">진짜 웜업</span>을 해준다. 
+                    처음에는 빡셌지만 결과는 확실했다." 
+                    <span class="sub">— 마포구 서버 관리자 A</span>
+                </p>
+            </div>
+
+            <hr>
+
+            <h2>🎯 결론: 웜업의 기준을 바꿔라</h2>
+            <p>
+                이 글이 부드럽게 읽히길 바랐다면 미안하다. 
+                여긴 <strong>맘카페 톤의 단단한 브루탈리즘</strong>이다. 
+                우리는 웜업을 '서비스'가 아니라 <u>하나의 공정</u>으로 본다. 
+                결과가 증명한다. 화곡 셔츠룸에서 웜업 한 번 받아보면 
+                지금까지의 웜업이 얼마나 얄팍했는지 바로 알게 된다.
+            </p>
+            <p style="font-size: 1.5rem; color: var(--acc); font-weight: bold;">
+                예약은 번호 하나면 끝. 010-6279-0862.<br>
+                불만 있으면 직접 와서 증명해라.
+            </p>
+        </article>
+
+        <!-- 추가 정보 섹션 (디자인 시스템 유지) -->
+        <section style="margin: 4rem 0;">
+            <h2>⚡ 더 단단한 읽을거리</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>서버 예열,<br>이것만 알면 끝</h3>
+                    <p class="sub">기본기를 무시하면 웜업도 없다.</p>
+                    <a href="#" class="btn">읽기</a>
+                </div>
+                <div class="card">
+                    <h3>화곡 vs 신촌<br>웜업 비교</h3>
+                    <p class="sub">지역별 차이를 까발린다.</p>
+                    <a href="#" class="btn">읽기</a>
+                </div>
+                <div class="card">
+                    <h3>24시 웜업<br>가이드</h3>
+                    <p class="sub">시간대별 최적의 웜업 루틴.</p>
+                    <a href="#" class="btn">읽기</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer>
+            <p>화곡 셔츠룸 | 마포 서버 웜업 전문 | 24시간 연중무휴</p>
+            <p>주소: 서울 마포구 화곡로 123길 45 | 전화: 010-6279-0862</p>
+            <p class="sub" style="margin-top: 1rem;">© 2025 brutalism workspace. all feedback is raw.</p>
+        </footer>
+    </div>
+</body>
+</html>
